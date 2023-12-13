@@ -294,3 +294,92 @@
     justify-content: center;
    }
 }
+
+/* ============================= SKILLS =============================== */
+
+.skills {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0px;
+    background-image: linear-gradient(to right, #0f0f0f 0%, #303335 100%);
+    position: relative;
+}
+
+.skills-p1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.sub-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.sub-title span {
+  color:  #18517c;
+}
+
+.skills-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-containers{
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.details-container{
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border-color: #0ef;
+  text-align: center;
+  background-color: rgb(177,228,231);
+}
+
+.skills-sub-title{
+  color: rgb(85,85,85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.article-container{
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.article-img{
+  width: 45px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.article-img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 480px) {
+  .about-containers {
+    flex-direction: column;
+  }
+}

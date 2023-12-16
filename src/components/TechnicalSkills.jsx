@@ -8,7 +8,7 @@ const TechnicalSkills = () => {
         {skills.map(skill => (
           <article key={skill.id}>
             <img src={skill.img} alt="image" className='article-img' />
-            <div>
+            <div className='article-info'>
               <h3>{skill.name}</h3>
               <p>{skill.level}</p>
             </div>

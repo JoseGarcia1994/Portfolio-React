@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className='home'>
+      <div id="home" className='home'>
         <NavBar />
         <Presentation />
       </div>
@@ -15,7 +15,6 @@ function App() {
       <div id="skills" className="skills">
         <Skills />
       </div>
-
     </>
   )
 }

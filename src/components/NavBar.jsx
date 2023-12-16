@@ -23,7 +23,7 @@ const NavBar = () => {
       <nav id="nav" className="navbar">
         <ul className="navbar__links" id="links">
           {navMenu.map(link => (
-            <li key={link.name}><a className='navbar__links-items'>{link.name}</a></li>
+            <li key={link.name}><a className='navbar__links-items' href={link.href}>{link.name}</a></li>
           ))}
         </ul>
       </nav>

@@ -1,4 +1,5 @@
 import Topic from "./Topic.jsx";
+import CourseCompleted from "./CourseCompleted.jsx";
 
 const CourseInfo = ({ course, onSelectedTopic, topicSelected }) => {
   return (
@@ -12,7 +13,7 @@ const CourseInfo = ({ course, onSelectedTopic, topicSelected }) => {
             <a href={course.certificate.url} target="_blank">View Certificate</a>
             <button onClick={() => onSelectedTopic(course)}>Topics</button>
           </div>
-          {topicSelected?.id === course.id && <Topic course={course}/>}
+          {topicSelected?.id === course.id && <Topic course={course} />}
         </div>
       ))}
 

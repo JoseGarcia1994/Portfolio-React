@@ -72,15 +72,15 @@ const trainings = [
           },
           {
             week: 2, 
-            title: "Loops, conditionals, type coercion, logical operators, methods for arrays and objects"
+            title: "Loops, conditionals, type coercion, logical operators, methods for arrays & objects"
           },
           {
             week: 3, 
-            title: "HTML Y CSS"
+            title: "HTML & CSS"
           },
           {
             week: 4, 
-            title: "GIT FLEX Y GRID"
+            title: "GIT, FLEX & GRID"
           },
           {
             week: 5, 
@@ -102,7 +102,37 @@ const trainings = [
           name: "Front-End Development with React",
           url: "https://certificates.academlo.com/en/verify/32446799142029",
           date: "Jun-29-2023"
-        }
+        },
+        topics: [
+          {
+            week: 1, 
+            title: "First steps, components, useState"
+          },
+          {
+            week: 2, 
+            title: "Lifecycle, useEffect, Axios API consumption, and custom hooks"
+          },
+          {
+            week: 3, 
+            title: "Conditional rendering, Lists and keys with map, Types of inputs, Events and controlled inputs"
+          },
+          {
+            week: 4, 
+            title: "Forms and CRUD's"
+          },
+          {
+            week: 5, 
+            title: "React Router and Introduction to Redux Toolkit"
+          },
+          {
+            week: 6, 
+            title: "Advanced Redux Toolkit"
+          },
+          {
+            week: 7, 
+            title: "Final Project"
+          },
+        ]
       },
       {
         id: 2, 
@@ -110,7 +140,37 @@ const trainings = [
           name: "Back-End Development with Node.js",
           url: "https://certificates.academlo.com/en/verify/80371342866278",
           date: "Sep-06-2023"
-        }
+        },
+        topics: [
+          {
+            week: 1, 
+            title: "Data Base: SQL Queries, Joins & Relational Data Base"
+          },
+          {
+            week: 2, 
+            title: "Node / Express: Middlewares & routes, Connection to the database & CRUD"
+          },
+          {
+            week: 3, 
+            title: "Express / Sequelize: Deploy Docs & Cors, MVC Routes, Joins Sequelize & Snippets"
+          },
+          {
+            week: 4, 
+            title: "Register & Login, Authentication, Express Validator & Error Handling"
+          },
+          {
+            week: 5, 
+            title: "Roles & Permissions, Send Emails & Template engines"
+          },
+          {
+            week: 6, 
+            title: "Sequelize - CLI (Command Line Interface)"
+          },
+          {
+            week: 7, 
+            title: "Final Project"
+          },
+        ]
       },
       {
         id: 3, 
@@ -118,7 +178,13 @@ const trainings = [
           name: "Full Stack Web Development Program",
           url: "https://certificates.academlo.com/en/verify/34198153543932",
           date: "Sep-07-2023"
-        }
+        },
+        topics: [
+          {
+            week: 1, 
+            title: "Course Completed Successfully"
+          },
+        ]
       },
     ] 
   },

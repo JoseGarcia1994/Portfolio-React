@@ -391,11 +391,6 @@ article {
   width: 100px;
 }
 
-@media screen and (max-width: 480px) {
-  .about-containers {
-    flex-direction: column;
-  }
-}
 
 .course-container {
   display: flex;
@@ -443,6 +438,42 @@ article {
   background: transparent;
   border: 1px solid #1b659c;
   color: #0f0f0f;
+}
+
+@media screen and (max-width: 480px) {
+  .course-container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-containers {
+    flex-direction: column;
+  }
+
+  .course-principal {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .course-btn {
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .about-containers {
+    flex-direction: column;
+  }
+
+  .course-principal {
+    max-width: 43rem;
+    justify-content: space-around;
+  }
+
+  .course-btn {
+    height: 35px;
+  }
 }
 
 .course-info {

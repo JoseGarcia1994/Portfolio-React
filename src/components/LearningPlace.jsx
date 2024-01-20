@@ -14,7 +14,6 @@ const LearningPlace = () => {
   const handleSelectedTopic = course => {
     setTopicSelected(cur => cur?.id === course.id ? null : course)
   }
-  console.log(topicSelected);
   return (
     <>
       <h2 className='skills-sub-title'>Learning Place</h2>

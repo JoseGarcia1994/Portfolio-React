@@ -1,9 +1,22 @@
-import './App.css'
+import { useState, useEffect } from 'react';
+import {projects} from './data';
 import NavBar from './components/NavBar.jsx';
 import Presentation from './components/Presentation.jsx';
+import Projects from './components/Projects.jsx';
 import Skills from './components/Skills.jsx';
+import './App.css'
 
 function App() {
+
+  const [filter, setFilter] = useState('');
+  const [filterProjects, setFilterProjects] = useState([]);
+
+  useEffect(() => {
+    if (filter) {
+      const filterProject = projects.filter( project => project.school === filter || project.teacher === filter)
+      setFilterProjects(filterProject);
+    }
+  }, [filter])
 
   return (
     <>
@@ -15,6 +28,14 @@ function App() {
       <div id="skills" className="skills">
         <Skills />
       </div>
+
+      <section id="projects" className="projects">
+        <Projects 
+          filter={filter}
+          setFilter={setFilter}
+          filterProjects={filterProjects} 
+        />
+      </section>
     </>
   )
 }

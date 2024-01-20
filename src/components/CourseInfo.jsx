@@ -1,5 +1,4 @@
 import Topic from "./Topic.jsx";
-import CourseCompleted from "./CourseCompleted.jsx";
 
 const CourseInfo = ({ course, onSelectedTopic, topicSelected }) => {
   return (

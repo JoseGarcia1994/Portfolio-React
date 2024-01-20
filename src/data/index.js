@@ -13,6 +13,18 @@ import GIT from '../../public/Git.png'
 import ACADEMLO from '../../public/academlo.png'
 import UDEMY from '../../public/Udemy.png'
 
+import Ecommerce from '../../public/projects/eccomerce.jpg'
+import Pokedex from '../../public/projects/pokedex.jpg'
+import Cost from '../../public/projects/Cost.jpg'
+import Patient from '../../public/projects/Patient.jpg'
+import Weather from '../../public/projects/Weather.jpg'
+import Rick from '../../public/projects/RickMorty.jpg'
+import Eat from '../../public/projects/eatNsplit.jpg'
+import FarAway from '../../public/projects/FarAway.jpg'
+import Crypto from '../../public/projects/Crypto.jpg'
+import Users from '../../public/projects/Users.jpg'
+import Movies from '../../public/projects/Movies.jpg'
+
 const navMenu = [
   {name: "home", href: "#home"},
   {name: "skills", href: "#skills"},
@@ -190,8 +202,143 @@ const trainings = [
   },
 ]
 
+const projects = [
+  {
+    id: 1,
+    projectName: 'Ecommerce App',
+    school: "Academlo",
+    img: Ecommerce,
+    date: "June 2023",
+    type: "Web/Mobile",
+    description: "This application was created using React.js and incorporates several libraries, including React-Redux, Axios, React-hook-form, React-router-dom, React-bootstrap, and Bootswatch",
+    web: "https://ecommerce-techno.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/Ecommerce",
+    teacher: "Brenda Gonzalez",
+  },
+  {
+    id: 2,
+    projectName: 'usePopcorn',
+    school: "Udemy",
+    img: Movies,
+    date: "Dec 2023 - Jan 2024",
+    type: "Web/Mobile",
+    description: "This application was created using Vite, React.js, Axios & pure CSS, also created a few hooks.",
+    web: "https://use-popcorn-movies.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/usePopcorn-Movies",
+    teacher: "Jonas Schmedtmann",
+  },
+  {
+    id: 3,
+    projectName: 'Pokedex',
+    school: "Academlo",
+    img: Pokedex,
+    date: "May 2023 - June 2023",
+    type: "Web/Mobile",
+    description: "This application was created using React.js and incorporates several libraries, including React-Redux, Axios, React-router-dom and CSS.",
+    web: "https://pokedex-pokemoons.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/Pokedex",
+    teacher: "Brenda Gonzalez",
+  },
+  {
+    id: 4,
+    projectName: 'Cost Control',
+    school: "Udemy",
+    img: Cost,
+    date: "Aug 2023 - Sep 2023",
+    type: "Web/Mobile",
+    description: "This application was created using React.js and incorporates several libraries, including, react-circular-progressbar, react-swipeable-list & CSS.",
+    web: "https://planning-cost-control.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/Cost-Control",
+    teacher: "Juan Pablo",
+  },
+  {
+    id: 5,
+    projectName: 'Patient Fallow up',
+    school: "Udemy",
+    img: Patient,
+    date: "Aug 2023",
+    type: "Web/Mobile",
+    description: "This application was created using React.js and incorporates Tailwind.",
+    web: "https://patient-fallow-up.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/Patient-Fallow-up",
+    teacher: "Juan Pablo",
+  },
+  {
+    id: 6,
+    projectName: 'Weather App',
+    school: "Academlo",
+    img: Weather,
+    date: "May 2023",
+    type: "Web/Mobile",
+    description: "This application was created using React.js, Axios & pure CSS",
+    web: "https://weatherlocationweb.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/WeatherApp",
+    teacher: "Brenda Gonzalez",
+  },
+  {
+    id: 7,
+    projectName: 'Rick & Morty',
+    school: "Academlo",
+    img: Rick,
+    date: "March 2023",
+    type: "Web/Mobile",
+    description: "This application was created using React.js, Axios & pure CSS",
+    web: "https://rick-mort-by-location.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/Rick-Morty",
+    teacher: "Brenda Gonzalez",
+  },
+  {
+    id: 8,
+    projectName: 'Eat-N-Split',
+    school: "Udemy",
+    img: Eat,
+    date: "Nov 2023",
+    type: "Web/Mobile",
+    description: "This application was created using React.js & pure CSS",
+    web: "https://eat-n-split-tracking.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/Eat-N-Split",
+    teacher: "Jonas Schmedtmann",
+  },
+  {
+    id: 9,
+    projectName: 'Far Away',
+    school: "Udemy",
+    img: FarAway,
+    date: "Nov 2023",
+    type: "Web/Mobile",
+    description: "This application was created using React.js & pure CSS",
+    web: "https://far-away-vacation.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/Far-Away",
+    teacher: "Jonas Schmedtmann",
+  },
+  {
+    id: 10,
+    projectName: 'Cryptocurrency',
+    school: "Udemy",
+    img: Crypto,
+    date: "Sep 2023",
+    type: "Web/Mobile",
+    description: "This application was created using React.js, using a API to obtain live currencies & used styled components",
+    web: "https://quote-cryptocurrency.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/Cryptocurrency",
+    teacher: "Juan Pablo",
+  },
+  {
+    id: 11,
+    projectName: 'Users CRUD',
+    school: "Academlo",
+    img: Users,
+    date: "May 2023",
+    type: "Web/Mobile",
+    description: "This application was created using React.js, Axios, React-hook-form & pure CSS",
+    web: "https://create-users-crud.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/Users-CRUD",
+    teacher: "Brenda Gonzalez",
+  },
+]
 export {
   navMenu,
   skills,
-  trainings
+  trainings,
+  projects
 }

@@ -15,6 +15,7 @@ const Filter = ({ filter, setFilter }) => {
             <option value="Jonas Schmedtmann">Jonas Schmedtmann</option>
             <option value="Brenda Gonzalez">Brenda Gonzalez</option>
             <option value="Juan Pablo">Juan Pablo</option>
+            <option value="Ian Rosas">Ian Rosas</option>
           </select>
         </div>
       </form>

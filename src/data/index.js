@@ -24,6 +24,7 @@ import FarAway from '../../public/projects/FarAway.jpg'
 import Crypto from '../../public/projects/Crypto.jpg'
 import Users from '../../public/projects/Users.jpg'
 import Movies from '../../public/projects/Movies.jpg'
+import API from '../../public/projects/api.jpg'
 
 const navMenu = [
   {name: "home", href: "#home"},
@@ -334,6 +335,42 @@ const projects = [
     web: "https://create-users-crud.netlify.app/",
     github: "https://github.com/JoseGarcia1994/Users-CRUD",
     teacher: "Brenda Gonzalez",
+  },
+  {
+    id: 12,
+    projectName: 'Chat API',
+    school: "Academlo",
+    img: API,
+    date: "Jul 2023 - Aug 2023",
+    type: "API",
+    description: "This API was created using Node.js with Express.js and incorporates several libraries,including bcrypt, cors, dotenv, express-validator, jsonwebtoken, morgan, pg, pg-hstore, nodemon, & sequelize-cli",
+    web: "",
+    github: "https://github.com/JoseGarcia1994/chat_db_API",
+    teacher: "Ian Rosas",
+  },
+  {
+    id: 13,
+    projectName: 'Users to do API',
+    school: "Academlo",
+    img: API,
+    date: "Jul 2023",
+    type: "API",
+    description: "This API was created using Node.js with Express.js and incorporates several libraries, including cors, dotenv, pg, pg-hstore, nodemon, & sequelize.",
+    web: "",
+    github: "https://github.com/JoseGarcia1994/users_to_do",
+    teacher: "Ian Rosas",
+  },
+  {
+    id: 14,
+    projectName: 'To do API',
+    school: "Academlo",
+    img: API,
+    date: "Jul 2023",
+    type: "API",
+    description: "This API was created using Node.js with Express.js and incorporates several libraries, including cors, dotenv, morgan, pg, pg-hstore, & sequelize.",
+    web: "",
+    github: "https://github.com/JoseGarcia1994/to-do-API",
+    teacher: "Ian Rosas",
   },
 ]
 export {

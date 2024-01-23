@@ -16,7 +16,7 @@ const Projects = ({ filter, setFilter, filterProjects }) => {
   const projectsFilterPage = filterProjects.slice(firstProjectIndex, lastProjectIndex)
 
   return (
-    <>
+    <div className="projects">
       <h2 className="projects__title">My Projects</h2>
       <Filter filter={filter} setFilter={setFilter} />
       <div className="projects__container">
@@ -59,7 +59,7 @@ const Projects = ({ filter, setFilter, filterProjects }) => {
           )
         }
       </div>
-    </>
+    </div>
   );
 };
 

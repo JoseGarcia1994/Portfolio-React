@@ -17,9 +17,16 @@ a {
 }
 
 .home {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../public/bk6.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    font-family: Akaya Kanadaka;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../public/bk2.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  font-family: Akaya Kanadaka;
+}
+
+.prject {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../public/projectbck.png");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
 }

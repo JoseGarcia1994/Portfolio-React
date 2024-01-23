@@ -29,7 +29,7 @@ function App() {
         <Skills />
       </div>
 
-      <section id="projects" className="projects">
+      <section id="projects" className='prject'>
         <Projects 
           filter={filter}
           setFilter={setFilter}

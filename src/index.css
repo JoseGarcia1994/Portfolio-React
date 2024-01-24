@@ -28,5 +28,15 @@ a {
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../public/projectbck.png");
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  background-image: linear-gradient(to right, #0f0f0f 0%, #303335 100%);
 }

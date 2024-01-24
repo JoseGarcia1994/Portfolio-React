@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
-import {projects} from './data';
+import { projects } from './data';
 import NavBar from './components/NavBar.jsx';
 import Presentation from './components/Presentation.jsx';
 import Projects from './components/Projects.jsx';
 import Skills from './components/Skills.jsx';
-import './App.css'
+import Contact from './components/Contact.jsx';
+import './App.css';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
 
   useEffect(() => {
     if (filter) {
-      const filterProject = projects.filter( project => project.school === filter || project.teacher === filter)
+      const filterProject = projects.filter(project => project.school === filter || project.teacher === filter)
       setFilterProjects(filterProject);
     }
   }, [filter])
@@ -29,13 +30,17 @@ function App() {
         <Skills />
       </div>
 
-      <section id="projects" className='prject'>
-        <Projects 
+      <div id="projects" className='prject'>
+        <Projects
           filter={filter}
           setFilter={setFilter}
-          filterProjects={filterProjects} 
+          filterProjects={filterProjects}
         />
-      </section>
+      </div>
+
+      <div className="contact" id="contact">
+        <Contact />
+      </div>
     </>
   )
 }

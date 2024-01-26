@@ -6,8 +6,8 @@ const Topic = ({course}) => {
       <ul className="topics">
         {course.topics.map(topic => (
           <div>
-            <p className="topic-week"><span>Week: </span>{topic.week}</p>
-            <li key={topic.week}>
+            <p className="topic-week"><span>Section: </span>{topic.section}</p>
+            <li key={topic.section}>
               {topic.title}
             </li>
           </div>

@@ -1,4 +1,4 @@
-import CV from '../assets/documents/JoseG2.pdf';
+import CV from '../assets/documents/JoseGC.pdf';
 import JoseG from '../../public/JoseG.png'
 import Button from './Button.jsx';
 
@@ -13,7 +13,10 @@ const Presentation = () => {
       </div>  
       <p className="presentation__description">I am a proficient frontend web developer with a passion for technology and programming. My focus is on continuous improvement and growth. I aim to utilize my skills in web development within organizations that prioritize this field.</p>
       <div className="home__btns">
-        <Button>Projects</Button>
+        <Button>
+          <a href="#projects"></a>
+          Projects
+        </Button>
         <Button className="home__content--btn">
           <a href={CV} target="_blank" download></a>
           Donwload CV

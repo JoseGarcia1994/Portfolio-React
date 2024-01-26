@@ -495,7 +495,7 @@ article {
 }
 
 .info:hover {
-  transform: translateX(1rem);
+  transform: translateX(0.3rem);
   background-color: rgb(98, 182, 187);
 }
 

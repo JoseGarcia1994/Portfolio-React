@@ -61,7 +61,61 @@ const trainings = [
           name: "The Ultimate Advance React Course",
           url: "",
           date: "In Progress",
-        }
+        },
+        topics: [
+          {
+            section: 1,
+            title: "React Fundamentals"
+          },
+          {
+            section: 2,
+            title: "Overview of React & setup 1st project"
+          },
+          {
+            section: 3,
+            title: "Working with Components, Props & JSX"
+          },
+          {
+            section: 4,
+            title: "State, Events, & Forms: Interactive Components"
+          },
+          {
+            section: 5,
+            title: "Thinking in React: State Management"
+          },
+          {
+            section: 6,
+            title: "Thinking in React: Components, Composition & Reusability"
+          },
+          {
+            section: 7,
+            title: "How React works behind the scenes"
+          },
+          {
+            section: 8,
+            title: "Effects & Data Fetching"
+          },
+          {
+            section: 9,
+            title: "Custome Hooks, Refs & more state"
+          },
+          {
+            section: 10,
+            title: "React before Hooks: Class based React"
+          },
+          {
+            section: 11,
+            title: "The Advance useReducer Hook"
+          },
+          {
+            section: 12,
+            title: "React Router: Single Page Application (SPA)"
+          },
+          {
+            section: 13,
+            title: "Advance State Management: The Context API"
+          },
+        ]
       }
     ]
   },
@@ -80,31 +134,31 @@ const trainings = [
         },
         topics: [
           {
-            week: 1, 
+            section: 1, 
             title: "JavaScript Basics"
           },
           {
-            week: 2, 
+            section: 2, 
             title: "Loops, conditionals, type coercion, logical operators, methods for arrays & objects"
           },
           {
-            week: 3, 
+            section: 3, 
             title: "HTML & CSS"
           },
           {
-            week: 4, 
+            section: 4, 
             title: "GIT, FLEX & GRID"
           },
           {
-            week: 5, 
+            section: 5, 
             title: "Frontend Challenges"
           },
           {
-            week: 6, 
+            section: 6, 
             title: "JavaScript Methods, Functions & Handlers"
           },
           {
-            week: 7, 
+            section: 7, 
             title: "Portfolio & Final Project"
           },
         ]
@@ -118,31 +172,31 @@ const trainings = [
         },
         topics: [
           {
-            week: 1, 
+            section: 1, 
             title: "First steps, components, useState"
           },
           {
-            week: 2, 
+            section: 2, 
             title: "Lifecycle, useEffect, Axios API consumption, and custom hooks"
           },
           {
-            week: 3, 
+            section: 3, 
             title: "Conditional rendering, Lists and keys with map, Types of inputs, Events and controlled inputs"
           },
           {
-            week: 4, 
+            section: 4, 
             title: "Forms and CRUD's"
           },
           {
-            week: 5, 
+            section: 5, 
             title: "React Router and Introduction to Redux Toolkit"
           },
           {
-            week: 6, 
+            section: 6, 
             title: "Advanced Redux Toolkit"
           },
           {
-            week: 7, 
+            section: 7, 
             title: "Final Project"
           },
         ]
@@ -156,31 +210,31 @@ const trainings = [
         },
         topics: [
           {
-            week: 1, 
+            section: 1, 
             title: "Data Base: SQL Queries, Joins & Relational Data Base"
           },
           {
-            week: 2, 
+            section: 2, 
             title: "Node / Express: Middlewares & routes, Connection to the database & CRUD"
           },
           {
-            week: 3, 
+            section: 3, 
             title: "Express / Sequelize: Deploy Docs & Cors, MVC Routes, Joins Sequelize & Snippets"
           },
           {
-            week: 4, 
+            section: 4, 
             title: "Register & Login, Authentication, Express Validator & Error Handling"
           },
           {
-            week: 5, 
+            section: 5, 
             title: "Roles & Permissions, Send Emails & Template engines"
           },
           {
-            week: 6, 
+            section: 6, 
             title: "Sequelize - CLI (Command Line Interface)"
           },
           {
-            week: 7, 
+            section: 7, 
             title: "Final Project"
           },
         ]
@@ -194,7 +248,7 @@ const trainings = [
         },
         topics: [
           {
-            week: 1, 
+            section: 1, 
             title: "Course Completed Successfully"
           },
         ]
@@ -373,6 +427,7 @@ const projects = [
     teacher: "Ian Rosas",
   },
 ]
+
 export {
   navMenu,
   skills,

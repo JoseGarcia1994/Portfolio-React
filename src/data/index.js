@@ -26,33 +26,51 @@ import Users from '../../public/projects/Users.jpg'
 import Movies from '../../public/projects/Movies.jpg'
 import API from '../../public/projects/api.jpg'
 
+import CV from '../assets/documents/JoseGC.pdf'
+
+const profile = {
+  name: "Jose Garcia",
+  roles: [
+    "Web Developer",
+  ],
+  description:
+    "I am a proficient frontend web developer with a passion for technology and programming. My focus is on continuous improvement and growth. I aim to utilize my skills in web development within organizations that prioritize this field.",
+  resume: CV,
+  linkedin: "https://www.linkedin.com/in/jose-eduardo-garcia-colin/",
+  github: "https://github.com/JoseGarcia1994",
+}
+
 const navMenu = [
-  {name: "home", href: "#home"},
-  {name: "skills", href: "#skills"},
-  {name: "projects", href: "#projects"},
-  {name: "contact",  href: "#contact"}
+  { name: "home", href: "#home" },
+  { name: "skills", href: "#skills" },
+  { name: "education", href: "#education" },
+  { name: "projects", href: "#projects" },
+  { name: "contact", href: "#contact" }
 ]
 
-const skills = [
-  {id: 1, name: "HTML", img: HTML, level: "Intermediate"},
-  {id: 2, name: "CSS", img: CSS, level: "Intermediate"},
-  {id: 3, name: "JavaScript", img: JS, level: "Intermediate"},
-  {id: 4, name: "React", img: REACT, level: "Intermediate"},
-  {id: 5, name: "Redux", img: REDUX, level: "Intermediate"},
-  {id: 6, name: "Remix", img: REMIX, level: "Basic"},
-  {id: 7, name: "Tailwind", img: TAILWIND, level: "Intermediate"},
-  {id: 8, name: "Node.js", img: NODE, level: "Basic"},
-  {id: 9, name: "PostgreSQL", img: POSTGRESQL, level: "Basic"},
-  {id: 10, name: "Strapi", img: STRAPI, level: "Basic"},
-  {id: 11, name: "GitHub", img: GITHUB, level: "Intermediate"},
-  {id: 12, name: "Git", img: GIT, level: "Intermediate"},
+const frontend = [
+  { id: 1, name: "HTML", img: HTML, level: "Intermediate" },
+  { id: 2, name: "CSS", img: CSS, level: "Intermediate" },
+  { id: 3, name: "JavaScript", img: JS, level: "Intermediate" },
+  { id: 4, name: "React", img: REACT, level: "Intermediate" },
+  { id: 5, name: "Redux", img: REDUX, level: "Intermediate" },
+  { id: 6, name: "Remix", img: REMIX, level: "Basic" },
+  { id: 7, name: "Tailwind", img: TAILWIND, level: "Intermediate" },
 ]
 
-const trainings = [
+const backend = [
+  { id: 1, name: "Node.js", img: NODE, level: "Basic" },
+  { id: 2, name: "PostgreSQL", img: POSTGRESQL, level: "Basic" },
+  { id: 3, name: "Strapi", img: STRAPI, level: "Basic" },
+  { id: 4, name: "GitHub", img: GITHUB, level: "Intermediate" },
+  { id: 5, name: "Git", img: GIT, level: "Intermediate" },
+]
+
+const education = [
   {
-    id: 1, 
-    school: "Udemy", 
-    img: UDEMY, 
+    id: 1,
+    school: "Udemy",
+    img: UDEMY,
     date: "Oct 2023 - Now",
     courses: [
       {
@@ -120,13 +138,13 @@ const trainings = [
     ]
   },
   {
-    id: 2, 
-    school: "Academlo", 
-    img: ACADEMLO, 
-    date: "Jan 2023 - Oct 2023", 
+    id: 2,
+    school: "Academlo",
+    img: ACADEMLO,
+    date: "Jan 2023 - Oct 2023",
     courses: [
       {
-        id: 0, 
+        id: 0,
         certificate: {
           name: "Foundations in HTML, CSS and Javascript",
           url: "https://certificates.academlo.com/en/verify/27645188090636",
@@ -134,31 +152,31 @@ const trainings = [
         },
         topics: [
           {
-            section: 1, 
+            section: 1,
             title: "JavaScript Basics"
           },
           {
-            section: 2, 
+            section: 2,
             title: "Loops, conditionals, type coercion, logical operators, methods for arrays & objects"
           },
           {
-            section: 3, 
+            section: 3,
             title: "HTML & CSS"
           },
           {
-            section: 4, 
+            section: 4,
             title: "GIT, FLEX & GRID"
           },
           {
-            section: 5, 
+            section: 5,
             title: "Frontend Challenges"
           },
           {
-            section: 6, 
+            section: 6,
             title: "JavaScript Methods, Functions & Handlers"
           },
           {
-            section: 7, 
+            section: 7,
             title: "Portfolio & Final Project"
           },
         ]
@@ -172,37 +190,37 @@ const trainings = [
         },
         topics: [
           {
-            section: 1, 
+            section: 1,
             title: "First steps, components, useState"
           },
           {
-            section: 2, 
+            section: 2,
             title: "Lifecycle, useEffect, Axios API consumption, and custom hooks"
           },
           {
-            section: 3, 
+            section: 3,
             title: "Conditional rendering, Lists and keys with map, Types of inputs, Events and controlled inputs"
           },
           {
-            section: 4, 
+            section: 4,
             title: "Forms and CRUD's"
           },
           {
-            section: 5, 
+            section: 5,
             title: "React Router and Introduction to Redux Toolkit"
           },
           {
-            section: 6, 
+            section: 6,
             title: "Advanced Redux Toolkit"
           },
           {
-            section: 7, 
+            section: 7,
             title: "Final Project"
           },
         ]
       },
       {
-        id: 2, 
+        id: 2,
         certificate: {
           name: "Back-End Development with Node.js",
           url: "https://certificates.academlo.com/en/verify/80371342866278",
@@ -210,37 +228,37 @@ const trainings = [
         },
         topics: [
           {
-            section: 1, 
+            section: 1,
             title: "Data Base: SQL Queries, Joins & Relational Data Base"
           },
           {
-            section: 2, 
+            section: 2,
             title: "Node / Express: Middlewares & routes, Connection to the database & CRUD"
           },
           {
-            section: 3, 
+            section: 3,
             title: "Express / Sequelize: Deploy Docs & Cors, MVC Routes, Joins Sequelize & Snippets"
           },
           {
-            section: 4, 
+            section: 4,
             title: "Register & Login, Authentication, Express Validator & Error Handling"
           },
           {
-            section: 5, 
+            section: 5,
             title: "Roles & Permissions, Send Emails & Template engines"
           },
           {
-            section: 6, 
+            section: 6,
             title: "Sequelize - CLI (Command Line Interface)"
           },
           {
-            section: 7, 
+            section: 7,
             title: "Final Project"
           },
         ]
       },
       {
-        id: 3, 
+        id: 3,
         certificate: {
           name: "Full Stack Web Development Program",
           url: "https://certificates.academlo.com/en/verify/34198153543932",
@@ -248,12 +266,12 @@ const trainings = [
         },
         topics: [
           {
-            section: 1, 
+            section: 1,
             title: "Course Completed Successfully"
           },
         ]
       },
-    ] 
+    ]
   },
 ]
 
@@ -269,6 +287,16 @@ const projects = [
     web: "https://ecommerce-techno.netlify.app/",
     github: "https://github.com/JoseGarcia1994/Ecommerce",
     teacher: "Brenda Gonzalez",
+    tags: [
+      "React JS",
+      "Redux",
+      "API",
+      "Axios",
+      "React-Hook-Form",
+      "React-Router-Dom",
+      "React-Bootstrap",
+      "Bootswatch"
+    ]
   },
   {
     id: 2,
@@ -281,6 +309,13 @@ const projects = [
     web: "https://use-popcorn-movies.netlify.app/",
     github: "https://github.com/JoseGarcia1994/usePopcorn-Movies",
     teacher: "Jonas Schmedtmann",
+    tags: [
+      "React JS",
+      "API",
+      "Axios",
+      "Local Storage",
+      "CSS"
+    ]
   },
   {
     id: 3,
@@ -293,6 +328,14 @@ const projects = [
     web: "https://pokedex-pokemoons.netlify.app/",
     github: "https://github.com/JoseGarcia1994/Pokedex",
     teacher: "Brenda Gonzalez",
+    tags: [
+      "React JS",
+      "Redux",
+      "API",
+      "Axios",
+      "CSS",
+      "React-Router-Dom",
+    ]
   },
   {
     id: 4,
@@ -305,6 +348,13 @@ const projects = [
     web: "https://planning-cost-control.netlify.app/",
     github: "https://github.com/JoseGarcia1994/Cost-Control",
     teacher: "Juan Pablo",
+    tags: [
+      "React JS",
+      "React Circular Progessbar",
+      "React Swipeable-List",
+      "Local Storage",
+      "CSS"
+    ]
   },
   {
     id: 5,
@@ -317,6 +367,11 @@ const projects = [
     web: "https://patient-fallow-up.netlify.app/",
     github: "https://github.com/JoseGarcia1994/Patient-Fallow-up",
     teacher: "Juan Pablo",
+    tags: [
+      "React JS",
+      "Local Storage",
+      "Tailwind"
+    ]
   },
   {
     id: 6,
@@ -329,6 +384,12 @@ const projects = [
     web: "https://weatherlocationweb.netlify.app/",
     github: "https://github.com/JoseGarcia1994/WeatherApp",
     teacher: "Brenda Gonzalez",
+    tags: [
+      "React JS",
+      "API",
+      "Axios",
+      "CSS"
+    ]
   },
   {
     id: 7,
@@ -341,6 +402,12 @@ const projects = [
     web: "https://rick-mort-by-location.netlify.app/",
     github: "https://github.com/JoseGarcia1994/Rick-Morty",
     teacher: "Brenda Gonzalez",
+    tags: [
+      "React JS",
+      "API",
+      "Axios",
+      "CSS"
+    ]
   },
   {
     id: 8,
@@ -353,6 +420,10 @@ const projects = [
     web: "https://eat-n-split-tracking.netlify.app/",
     github: "https://github.com/JoseGarcia1994/Eat-N-Split",
     teacher: "Jonas Schmedtmann",
+    tags: [
+      "React JS",
+      "CSS"
+    ]
   },
   {
     id: 9,
@@ -365,6 +436,10 @@ const projects = [
     web: "https://far-away-vacation.netlify.app/",
     github: "https://github.com/JoseGarcia1994/Far-Away",
     teacher: "Jonas Schmedtmann",
+    tags: [
+      "React JS",
+      "CSS"
+    ]
   },
   {
     id: 10,
@@ -377,6 +452,11 @@ const projects = [
     web: "https://quote-cryptocurrency.netlify.app/",
     github: "https://github.com/JoseGarcia1994/Cryptocurrency",
     teacher: "Juan Pablo",
+    tags: [
+      "React JS",
+      "API",
+      "Styled Components"
+    ]
   },
   {
     id: 11,
@@ -389,6 +469,13 @@ const projects = [
     web: "https://create-users-crud.netlify.app/",
     github: "https://github.com/JoseGarcia1994/Users-CRUD",
     teacher: "Brenda Gonzalez",
+    tags: [
+      "React JS",
+      "API",
+      "Axios",
+      "React-Hook-Form",
+      "CSS"
+    ]
   },
   {
     id: 12,
@@ -401,6 +488,16 @@ const projects = [
     web: "",
     github: "https://github.com/JoseGarcia1994/chat_db_API",
     teacher: "Ian Rosas",
+    tags : [
+      "Node JS",
+      "Express",
+      "PostgresSQL",
+      "Sequelize-cli",
+      "Cors",
+      "dotenv",
+      "nodemon",
+      "morgan"
+    ]
   },
   {
     id: 13,
@@ -413,6 +510,16 @@ const projects = [
     web: "",
     github: "https://github.com/JoseGarcia1994/users_to_do",
     teacher: "Ian Rosas",
+    tags : [
+      "Node JS",
+      "Express",
+      "PostgresSQL",
+      "Sequelize",
+      "Cors",
+      "dotenv",
+      "nodemon",
+      "pg"
+    ]
   },
   {
     id: 14,
@@ -425,12 +532,24 @@ const projects = [
     web: "",
     github: "https://github.com/JoseGarcia1994/to-do-API",
     teacher: "Ian Rosas",
+    tags : [
+      "Node JS",
+      "Express",
+      "PostgresSQL",
+      "Sequelize",
+      "Cors",
+      "dotenv",
+      "morgan",
+      "pg"
+    ]
   },
 ]
 
 export {
+  profile,
   navMenu,
-  skills,
-  trainings,
+  frontend,
+  backend,
+  education,
   projects
 }

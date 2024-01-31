@@ -1,0 +1,17 @@
+.courseContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 2rem;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .courseContentContainer {
+    margin-top: .8rem;
+    margin-left: .8rem;
+    margin-right: .8rem;
+    margin-bottom: 4rem;
+  }
+}

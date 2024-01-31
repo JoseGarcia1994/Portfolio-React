@@ -1,0 +1,29 @@
+.frontendTitle { /* skills-sub-title */
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  border-bottom: 3px solid rgb(127, 192, 196);
+}
+
+.articleContainer { /* article-container */
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 480px) {
+  .articleContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .articleContainer {
+    justify-content: space-evenly;
+  }
+}

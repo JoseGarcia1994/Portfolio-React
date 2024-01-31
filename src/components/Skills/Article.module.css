@@ -1,0 +1,21 @@
+.article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.articleImg {
+  width: 40px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.articleImg:hover {
+  transform: scale(1.2);
+}
+
+.articleInfo {
+  width: 100px;
+  color: #d6d6db;
+}

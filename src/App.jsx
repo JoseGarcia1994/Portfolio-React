@@ -1,29 +1,36 @@
-import { useState, useEffect } from 'react';
-import { projects } from './data';
-import NavBar from './components/NavBar.jsx';
+import NavBar from './components/NavBar/NavBar.jsx';
 import Presentation from './components/Presentation.jsx';
 import Projects from './components/Projects.jsx';
-import Skills from './components/Skills.jsx';
+import Skills from './components/Skills/Skills.jsx';
 import Contact from './components/Contact.jsx';
+import HomeSection from './components/Home/HomeSection.jsx';
+import EducationSection from './components/Education/EducationSection.jsx';
+import { useState } from 'react';
 import './App.css';
+import Footer from './components/Footer.jsx';
 
 function App() {
 
-  const [filter, setFilter] = useState('');
-  const [filterProjects, setFilterProjects] = useState([]);
-
-  useEffect(() => {
-    if (filter) {
-      const filterProject = projects.filter(project => project.school === filter || project.teacher === filter)
-      setFilterProjects(filterProject);
-    }
-  }, [filter])
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
 
   return (
-    <>
-      <div id="home" className='home'>
+    <div className='App'>
+      <NavBar />
+      <body className='body'>
+        <HomeSection />
+        <div className='wrapper'>
+          <Skills />
+          <EducationSection />
+        </div>
+        <Projects openModal={openModal} setOpenModal={setOpenModal} />
+        <div className='wrapper'>
+          <Contact />
+        </div>
+        <Footer />
+      </body>
+      {/* <div id="home" className='home'>
         <NavBar />
-        <Presentation />
+        <HomeSection />
       </div>
 
       <div id="skills" className="skills">
@@ -40,8 +47,8 @@ function App() {
 
       <div className="contact" id="contact">
         <Contact />
-      </div>
-    </>
+      </div> */}
+    </div>
   )
 }
 

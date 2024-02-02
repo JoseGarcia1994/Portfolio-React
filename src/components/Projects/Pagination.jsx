@@ -1,3 +1,4 @@
+import styles from './Pagination.module.css';
 
 const Pagination = ({ totalProjects, projectsPerPage, currentPage, setCurrentPage }) => {
   let pages = [];
@@ -7,14 +8,14 @@ const Pagination = ({ totalProjects, projectsPerPage, currentPage, setCurrentPag
   }
 
   return (
-    <div className='pagination'>
+    <div className={styles.pagination}>
       {
         pages.map((page, index) => {
           return (
             <button 
               key={index} 
               onClick={() => setCurrentPage(page)}
-              className={page == currentPage ? "active" : ""}
+              className={page == currentPage ? styles.active : ""}
             >
               {page}
             </button>

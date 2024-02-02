@@ -1,0 +1,32 @@
+.filterContainer{
+  display: flex;
+  border: 1.5px solid #2e4cd4;
+  color: #2e4cd4;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 22px 0px;
+}
+
+.filterOption {
+  padding: 8px 18px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #1e1e2b;
+}
+
+.divider {
+  width: 1.5px;
+  background: #2e4cd4;
+}
+
+@media screen and (max-width: 768px) {
+  .filterContainer {
+    font-size: 12px;
+  }
+
+  .filterOption {
+    padding: 6px 8px;
+  }
+}

@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { projects } from '../data';
+import { projects } from '../../data/index.js';
 import Filter from './Filter.jsx';
 import Project from './Project.jsx';
 import Pagination from './Pagination.jsx';
+import styles from './Projects.module.css';
 
 const Projects = ({openModal , setOpenModal}) => {
 
@@ -25,9 +26,9 @@ const Projects = ({openModal , setOpenModal}) => {
   }, [filter])
 
   return (
-    <div className="projects">
-      <div className="projects__container">
-      <h2 className="projects__title">My Projects</h2>
+    <div className={styles.projects} id='projects'>
+      <div className={styles.projectsContainer}>
+      <h2 className={styles.projectsTitle}>My Projects</h2>
       <Filter filter={filter} setFilter={setFilter} />
         {
           filter ? (
@@ -38,7 +39,7 @@ const Projects = ({openModal , setOpenModal}) => {
                 currentPage={currentPage}
                 setCurrentPage={setCurrentPage}
               />
-              <div className='projects-filter'>
+              <div className={styles.projectsFilter}>
                 {projectsFilterPage.map(project => (
                   <Project
                     key={project.id}
@@ -57,7 +58,7 @@ const Projects = ({openModal , setOpenModal}) => {
                 currentPage={currentPage}
                 setCurrentPage={setCurrentPage}
               />
-              <div className='projects-full'>
+              <div className={styles.projectsFull}>
                 {projectsPagination.map(project => (
                   <Project
                     key={project.id}

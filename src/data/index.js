@@ -61,11 +61,11 @@ const profile = {
 }
 
 const navMenu = [
-  { name: "home", href: "#home" },
-  { name: "skills", href: "#skills" },
-  { name: "education", href: "#education" },
-  { name: "projects", href: "#projects" },
-  { name: "contact", href: "#contact" }
+  { name: "Home", href: "#home" },
+  { name: "Skills", href: "#skills" },
+  { name: "Education", href: "#education" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" }
 ]
 
 const frontend = [

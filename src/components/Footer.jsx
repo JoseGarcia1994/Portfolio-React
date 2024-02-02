@@ -1,5 +1,5 @@
 import styles from './Footer.module.css';
-import {profile} from '../data';
+import { profile, navMenu } from '../data';
 
 const Footer = () => {
   return (
@@ -7,11 +7,13 @@ const Footer = () => {
       <footer className={styles.footerContent}>
         <h1 className={styles.footerLogo}></h1>
         <nav className={styles.nav}>
-          <a className={styles.navLinks} href="#home">Home</a>
-          <a className={styles.navLinks} href="#skills">Skills</a>
-          <a className={styles.navLinks} href="#education">Education</a>
-          <a className={styles.navLinks} href="#projects">Projects</a>
-          <a className={styles.navLinks} href="#contact">Contact</a>
+          {
+            navMenu.map(menu => (
+              <a key={menu.name} className={styles.navLinks} href={menu.href} >
+                {menu.name}
+              </a>
+            ))
+          }
         </nav>
         <div className={styles.socialIcons}>
           <a className={styles.socialIcon} href={profile.github}>

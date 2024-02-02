@@ -8,6 +8,8 @@ import EducationSection from './components/Education/EducationSection.jsx';
 import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer.jsx';
+import Wrapper from './components/Wrapper.jsx';
+import Body from './components/Body.jsx';
 
 function App() {
 
@@ -16,38 +18,18 @@ function App() {
   return (
     <div className='App'>
       <NavBar />
-      <body className='body'>
+      <Body>
         <HomeSection />
-        <div className='wrapper'>
+        <Wrapper>
           <Skills />
           <EducationSection />
-        </div>
+        </Wrapper>
         <Projects openModal={openModal} setOpenModal={setOpenModal} />
-        <div className='wrapper'>
+        <Wrapper>
           <Contact />
-        </div>
+        </Wrapper>
         <Footer />
-      </body>
-      {/* <div id="home" className='home'>
-        <NavBar />
-        <HomeSection />
-      </div>
-
-      <div id="skills" className="skills">
-        <Skills />
-      </div>
-
-      <div id="projects" className='prject'>
-        <Projects
-          filter={filter}
-          setFilter={setFilter}
-          filterProjects={filterProjects}
-        />
-      </div>
-
-      <div className="contact" id="contact">
-        <Contact />
-      </div> */}
+      </Body>
     </div>
   )
 }

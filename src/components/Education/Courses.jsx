@@ -16,7 +16,7 @@ const Courses = () => {
     setTopicSelected(cur => cur?.id === course.id ? null : course)
   }
   return (
-    <div className={styles.courseContentContainer}>
+    <div className={styles.courseContainer}>
       {education.map(course => (
           <Course
             key={course.id}

@@ -1,19 +1,20 @@
 .topicContainer {
+  width: 680px;
   border-top: 3px solid rgb(127, 192, 196);
 }
 
-.topics {
+.topicsList {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem 0;
 }
 
-.topics li {
-  color: #bebcbc;
+.topicsList li {
+  color: #e2d5d5;
 }
 
-.topics div {
+.topicsList div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -23,4 +24,10 @@
 .topicSection {
   color: #fff;
   font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .topicContainer {
+    width: 100%;
+  }
 }

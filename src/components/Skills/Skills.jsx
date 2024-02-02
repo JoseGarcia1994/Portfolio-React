@@ -7,7 +7,7 @@ import styles from './Skills.module.css';
 const Skills = () => {
   return (
     <>
-      <h1 className={styles.title}>MY<span>Skills</span></h1>
+      <h1 className={styles.title} id="skills">MY <span>Skills</span></h1>
       <div className={styles.skillsContainer}>
         <div className={styles.skillsContentContainer}>
           <Container>

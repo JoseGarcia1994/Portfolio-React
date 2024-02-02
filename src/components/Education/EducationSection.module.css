@@ -17,7 +17,7 @@
   width: 100%;
   max-width: 1350px;
   padding: 40px 0px 0px 0px;
-  gap: 12px;
+  gap: 2.5rem;
 }
 
 .educationTitle {
@@ -34,15 +34,6 @@
   max-width: 600px;
   color: rgb(177, 178, 179);
 }
-
-.courseContainer { /* course-container */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 
 @media screen and (max-width: 960px) {
   .education {
@@ -64,12 +55,4 @@
     font-size: 16px;
     padding: 0 1rem;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .courseContainer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
 }

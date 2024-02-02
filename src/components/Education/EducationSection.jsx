@@ -11,9 +11,7 @@ const EducationSection = () => {
         <p className={styles.educationSubtitle}>
           My education has been a journey of self-discovery and growth. My educational details are as follows.
         </p>
-        <div className={styles.courseContainer}>
-          <Courses />
-        </div>
+        <Courses />
       </div>
     </div>
   );

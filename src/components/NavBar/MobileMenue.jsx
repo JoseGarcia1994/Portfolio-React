@@ -6,6 +6,7 @@ const MobileMenue = ({openMenu, closeNav}) => {
       <div className={styles.overlayContent}>
         <a href="#home" onClick={closeNav}>HOME</a>
         <a href="#skills" onClick={closeNav}>SKILLS</a>
+        <a href="#education" onClick={closeNav}>Education</a>
         <a href="#projects" onClick={closeNav}>PROJECTS</a>
         <a href="#contact" onClick={closeNav}>CONTACT</a>
       </div>

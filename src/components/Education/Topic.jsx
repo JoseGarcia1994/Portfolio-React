@@ -5,7 +5,7 @@ const Topic = ({course}) => {
     <div className={styles.topicContainer}>
       <ul className={styles.topicsList}>
         {course.topics.map(topic => (
-          <div>
+          <div key={topic.section}>
             <p className={styles.topicSection}><span>Section: </span>{topic.section}</p>
             <li key={topic.section}>
               {topic.title}

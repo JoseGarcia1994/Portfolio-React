@@ -5,7 +5,7 @@ import Skills from './components/Skills/Skills.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import HomeSection from './components/Home/HomeSection.jsx';
 import EducationSection from './components/Education/EducationSection.jsx';
-import Footer from './components/Footer.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import Wrapper from './components/Wrapper.jsx';
 import Body from './components/Body.jsx';
 import './App.css';

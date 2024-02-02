@@ -2,7 +2,7 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import Presentation from './components/Presentation.jsx';
 import Projects from './components/Projects.jsx';
 import Skills from './components/Skills/Skills.jsx';
-import Contact from './components/Contact.jsx';
+import Contact from './components/Contact/Contact.jsx';
 import HomeSection from './components/Home/HomeSection.jsx';
 import EducationSection from './components/Education/EducationSection.jsx';
 import { useState } from 'react';

@@ -38,6 +38,26 @@ const profile = {
   resume: CV,
   linkedin: "https://www.linkedin.com/in/jose-eduardo-garcia-colin/",
   github: "https://github.com/JoseGarcia1994",
+  contactInfo: [
+    {
+      id: 0,
+      icon: "🗺",
+      title: "Location",
+      contact: "Mexico, Jalisco",
+    },
+    {
+      id: 1,
+      icon: "📲",
+      title: "Phone",
+      contact: "+52 332-968-6053"
+    },
+    {
+      id: 2,
+      icon: "📧",
+      title: "Email",
+      contact: "garciacolin@hotmail.com"
+    }
+  ]
 }
 
 const navMenu = [

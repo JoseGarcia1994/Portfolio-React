@@ -1,9 +1,9 @@
 
-const Button = ({children}) => {
+const Button = ({children, href, target}) => {
   return (
-    <div className="home__content--btn">
+    <a className="Btn-primary" href={href} target={target}>
       {children}
-    </div>
+    </a>
   );
 };
 

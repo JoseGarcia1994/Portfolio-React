@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer.jsx';
 import Wrapper from './components/Wrapper.jsx';
 import Body from './components/Body.jsx';
 import './App.css';
+import ProjectModal from './components/Projects/ProjectModal.jsx';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Contact />
         </Wrapper>
         <Footer />
+        {openModal.state && <ProjectModal openModal={openModal} setOpenModal={setOpenModal} />}
       </Body>
     </div>
   )

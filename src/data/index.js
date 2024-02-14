@@ -25,6 +25,7 @@ import Crypto from '../../public/projects/Crypto.jpg'
 import Users from '../../public/projects/Users.jpg'
 import Movies from '../../public/projects/Movies.jpg'
 import API from '../../public/projects/api.jpg'
+import Pizza from '../../public/projects/fast-pizza.jpg'
 
 import CV from '../assets/documents/JoseGC.pdf'
 
@@ -72,7 +73,7 @@ const frontend = [
   { id: 1, name: "HTML", img: HTML, level: "Intermediate" },
   { id: 2, name: "CSS", img: CSS, level: "Intermediate" },
   { id: 3, name: "JavaScript", img: JS, level: "Intermediate" },
-  { id: 4, name: "React", img: REACT, level: "Intermediate" },
+  { id: 4, name: "React", img: REACT, level: "Advanced" },
   { id: 5, name: "Redux", img: REDUX, level: "Intermediate" },
   { id: 6, name: "Remix", img: REMIX, level: "Basic" },
   { id: 7, name: "Tailwind", img: TAILWIND, level: "Intermediate" },
@@ -296,6 +297,25 @@ const education = [
 ]
 
 const projects = [
+  {
+    id: 0,
+    projectName: 'Fast Pizza Co.',
+    school: "Udemy",
+    img: Pizza,
+    date: "Feb 2024",
+    type: "Web/Mobile",
+    description: "This pizza web app allows users to order pizza, add, delete, and update orders. It utilizes geolocation for delivery purposes and allows users to track the progress of their orders.",
+    web: "https://fast-pizza-lon.netlify.app/",
+    github: "https://github.com/JoseGarcia1994/Fast-Pizza",
+    teacher: "Jonas Schmedtmann",
+    tags: [
+      "React JS",
+      "Redux Toolkit",
+      "React-Router-Dom",
+      "API",
+      "Tailwind"
+    ]
+  },
   {
     id: 1,
     projectName: 'Ecommerce App',

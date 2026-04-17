@@ -32,10 +32,10 @@ import CV from '../assets/documents/JoseGC.pdf'
 const profile = {
   name: "Jose Garcia",
   roles: [
-    "Web Developer",
+    "Backend Developer",
   ],
   description:
-    "I am a proficient frontend web developer with a passion for technology and programming. My focus is on continuous improvement and growth. I aim to utilize my skills in web development within organizations that prioritize this field.",
+    "I build APIs with Python and FastAPI, focusing on clean architecture, performance, and scalability. Currently expanding my skills to develop robust backend systems.",
   resume: CV,
   linkedin: "https://www.linkedin.com/in/jose-eduardo-garcia-colin/",
   github: "https://github.com/JoseGarcia1994",

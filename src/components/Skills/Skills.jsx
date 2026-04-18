@@ -2,6 +2,7 @@ import Container from "./Container.jsx";
 import Frontend from "./Frontend.jsx";
 import LearningPlace from '../Education/Courses.jsx';
 import Backend from "./Backend.jsx";
+import Tools from "./Tools.jsx";
 import styles from './Skills.module.css';
 
 const Skills = () => {
@@ -12,6 +13,10 @@ const Skills = () => {
         <div className={styles.skillsContentContainer}>
           <Container>
             <Backend />
+          </Container>
+
+          <Container>
+            <Tools />
           </Container>
 
           <Container>

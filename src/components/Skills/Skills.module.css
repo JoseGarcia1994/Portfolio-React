@@ -17,21 +17,12 @@
   margin: 0 auto;
 }
 
-.skillsContentContainer {   /*  about-containers */
-  display: flex;
-  justify-content: center;
+.skillsContentContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin: 2rem;
   padding: 0 1rem;
-}
-
-@media screen and (max-width: 480px) {
-  
-  .skillsContentContainer {
-    margin: 1rem;
-    flex-direction: column;
-  }
-  
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {

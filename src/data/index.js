@@ -1,15 +1,16 @@
-import REDUX from '../../public/redux.svg'
-import REMIX from '../../public/remix.webp'
-import STRAPI from '../../public/strapi.svg'
-import GITHUB from '../../public/github.svg'
-import GIT from '../../public/Git.png'
-import ACADEMLO from '../../public/academlo.png'
-import UDEMY from '../../public/Udemy.png'
+const UDEMY = "/Udemy.png"
+const ACADEMLO = "/academlo.png"
+
 const FASTAPI = "/fastapi.svg"
 const PYTHON = "/python.svg"
 const POSTGRESQL = "postgresql.svg"
 const SQLALCHEMY = "/sqlalchemy.svg"
 const PYDANTIC = "/pydantic.svg"
+
+const GIT = "/git.svg"
+const GITHUB = "/github.svg"
+const POSTMAN = "/postman.svg"
+const PYCHARM = "/pycharm.svg"
 
 const HTML = "/html5.svg"
 const CSS = "/css.svg"
@@ -17,19 +18,19 @@ const JAVASCRIPT = "/javascript.svg"
 const REACT = "/react.svg"
 
 
-import Ecommerce from '../../public/projects/eccomerce.jpg'
-import Pokedex from '../../public/projects/pokedex.jpg'
-import Cost from '../../public/projects/Cost.jpg'
-import Patient from '../../public/projects/Patient.jpg'
-import Weather from '../../public/projects/Weather.jpg'
-import Rick from '../../public/projects/RickMorty.jpg'
-import Eat from '../../public/projects/eatNsplit.jpg'
-import FarAway from '../../public/projects/FarAway.jpg'
-import Crypto from '../../public/projects/Crypto.jpg'
-import Users from '../../public/projects/Users.jpg'
-import Movies from '../../public/projects/Movies.jpg'
-import API from '../../public/projects/api.jpg'
-import Pizza from '../../public/projects/fast-pizza.jpg'
+const Ecommerce = "/projects/eccomerce.jpg";
+const Pokedex = "/projects/pokedex.jpg";
+const Cost = "/projects/Cost.jpg";
+const Patient = "/projects/Patient.jpg";
+const Weather = "/projects/Weather.jpg";
+const Rick = "/projects/RickMorty.jpg";
+const Eat = "/projects/eatNsplit.jpg";
+const FarAway = "/projects/FarAway.jpg";
+const Crypto = "/projects/Crypto.jpg";
+const Users = "/projects/Users.jpg";
+const Movies = "/projects/Movies.jpg";
+const API = "/projects/api.jpg";
+const Pizza = "/projects/fast-pizza.jpg";
 
 import CV from '../assets/documents/JoseGC.pdf'
 
@@ -87,6 +88,13 @@ const backend = [
   { id: 4, name: "SQLAlchemy", img: SQLALCHEMY, level: "Basic" },
   { id: 5, name: "Pydantic", img: PYDANTIC, level: "Basic" },
 ]
+
+const tools = [
+  { id: 1, name: "Git", img: GIT, level: "Intermediate"},
+  { id: 2, name: "GitHub", img: GITHUB, level: "Intermediate"},
+  { id: 3, name: "Postman", img: POSTMAN, level: "Learning"},
+  { id: 4, name: "Pycharm", img: PYCHARM, level: "Learning"}
+];
 
 const education = [
   {
@@ -591,6 +599,7 @@ export {
   navMenu,
   frontend,
   backend,
+  tools,
   education,
   projects
 }

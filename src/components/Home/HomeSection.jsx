@@ -1,5 +1,5 @@
 import Typewriter from 'typewriter-effect';
-import Img from '../../../public/JoseGa.png'
+const Img = "/JoseGa.png";
 import styles from "./HomeSection.module.css";
 import {profile} from '../../data';
 import HomeBgAnimation from '../HomeBgAnimation/HomeBgAnimation.jsx';

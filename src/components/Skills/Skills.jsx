@@ -11,11 +11,11 @@ const Skills = () => {
       <div className={styles.skillsContainer}>
         <div className={styles.skillsContentContainer}>
           <Container>
-            <Frontend />
+            <Backend />
           </Container>
 
           <Container>
-            <Backend />
+            <Frontend />
           </Container>
         </div>
       </div>

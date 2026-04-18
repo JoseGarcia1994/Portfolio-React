@@ -1,17 +1,21 @@
-import HTML from '../../public/html.png';
-import CSS from '../../public/CSS.png'
-import JS from '../../public/JS.png'
-import REACT from '../../public/React.png'
 import REDUX from '../../public/redux.svg'
 import REMIX from '../../public/remix.webp'
-import TAILWIND from '../../public/Tailwind.png'
-import NODE from '../../public/node.png'
-import POSTGRESQL from '../../public/Postgresql.png'
 import STRAPI from '../../public/strapi.svg'
 import GITHUB from '../../public/github.svg'
 import GIT from '../../public/Git.png'
 import ACADEMLO from '../../public/academlo.png'
 import UDEMY from '../../public/Udemy.png'
+const FASTAPI = "/fastapi.svg"
+const PYTHON = "/python.svg"
+const POSTGRESQL = "postgresql.svg"
+const SQLALCHEMY = "/sqlalchemy.svg"
+const PYDANTIC = "/pydantic.svg"
+
+const HTML = "/html5.svg"
+const CSS = "/css.svg"
+const JAVASCRIPT = "/javascript.svg"
+const REACT = "/react.svg"
+
 
 import Ecommerce from '../../public/projects/eccomerce.jpg'
 import Pokedex from '../../public/projects/pokedex.jpg'
@@ -70,21 +74,18 @@ const navMenu = [
 ]
 
 const frontend = [
-  { id: 1, name: "HTML", img: HTML, level: "Intermediate" },
-  { id: 2, name: "CSS", img: CSS, level: "Intermediate" },
-  { id: 3, name: "JavaScript", img: JS, level: "Intermediate" },
-  { id: 4, name: "React", img: REACT, level: "Advanced" },
-  { id: 5, name: "Redux", img: REDUX, level: "Intermediate" },
-  { id: 6, name: "Remix", img: REMIX, level: "Basic" },
-  { id: 7, name: "Tailwind", img: TAILWIND, level: "Intermediate" },
+  { id: 1, name: "HTML", img: HTML, level: "Basic" },
+  { id: 2, name: "CSS", img: CSS, level: "Basic" },
+  { id: 3, name: "JavaScript", img: JAVASCRIPT, level: "Basic" },
+  { id: 4, name: "React", img: REACT, level: "Basic"},
 ]
 
 const backend = [
-  { id: 1, name: "Node.js", img: NODE, level: "Basic" },
-  { id: 2, name: "PostgreSQL", img: POSTGRESQL, level: "Basic" },
-  { id: 3, name: "Strapi", img: STRAPI, level: "Basic" },
-  { id: 4, name: "GitHub", img: GITHUB, level: "Intermediate" },
-  { id: 5, name: "Git", img: GIT, level: "Intermediate" },
+  { id: 1, name: "Python", img: PYTHON, level: "Intermediate" },
+  { id: 2, name: "FastAPI", img: FASTAPI, level: "Intermediate" },
+  { id: 3, name: "PostgreSQL", img: POSTGRESQL, level: "Basic" },
+  { id: 4, name: "SQLAlchemy", img: SQLALCHEMY, level: "Basic" },
+  { id: 5, name: "Pydantic", img: PYDANTIC, level: "Basic" },
 ]
 
 const education = [
